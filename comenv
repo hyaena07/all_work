@@ -1,0 +1,19 @@
+.SUFFIXES   : .c .o
+
+CC		= gcc
+
+G_DEFS		= -D_LINUX -DDEBUG #-D_LIB_DEBUG
+
+I_X11	= -I/usr/include/X11
+
+L_X11	= -L/usr/lib -lX11 #-lXm -Xt
+
+#Archive Library
+#G_LIBTYP	= A_LIB
+#G_CFLAGS	= -g -m64
+#G_LFLAGS	= -static
+
+#Shared Library
+G_LIBTYP	= S_LIB
+G_CFLAGS	= -g -m64 -fPIC
+G_LFLAGS	= 
