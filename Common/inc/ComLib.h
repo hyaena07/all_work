@@ -50,13 +50,6 @@ int		unLockFile			(char *);
 /****************************************************************************/
 #define	FF_BLOCK	0x0001
 
-#define	JPS_NAM		"JPCOMD"
-#define	JPS_MAX		250
-
-#define	JPS_LOCK(semno)		SemOpr(JPS_NAM, JPS_MAX, semno, 1)
-#define	JPS_UNLOCK(semno)	SemOpr(JPS_NAM, JPS_MAX, semno, 2)
-#define	JPS_CHECK(semno)	SemOpr(JPS_NAM, JPS_MAX, semno, 3)
-
 int		CreatMsq			(char *, int);
 int		ClearMsq			(int, long);
 int		CreatShm			(char *, int , int);

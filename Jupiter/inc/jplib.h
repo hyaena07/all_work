@@ -29,6 +29,15 @@ int jpsq_read	(char *, int);
 #define	JPEC_DATA_MAX	(1024 * 10)
 #define	JPEC_PORT_NUM	10000		// 미사용 포트 검색 시작값
 
+// Semaphore Lock
+#define	JPS_NAM		"JPCOMD"
+#define	JPS_MAX		250
+
+#define	JPS_LOCK(semno)		SemOpr(JPS_NAM, JPS_MAX, semno, 1)
+#define	JPS_UNLOCK(semno)	SemOpr(JPS_NAM, JPS_MAX, semno, 2)
+#define	JPS_CHECK(semno)	SemOpr(JPS_NAM, JPS_MAX, semno, 3)
+
+
 struct jpec_data  {
 	char	jpec_name[JPEC_NAME_LEN];
 	long	jpec_i_len;
