@@ -405,7 +405,6 @@ int SendFIFO(char *fifo_path, char *sbuf, int slen, int mode, int wsec)
  *		#define	JPS_UNLOCK(semno)	SemOpr(JPS_NAM, JPS_MAX, semno, 2)		*
  *		#define	JPS_CHECK(semno)	SemOpr(JPS_NAM, JPS_MAX, semno, 3)		*
  *																			*
- *																			*
  * 인수 : char *prjnm														*
  *			프로젝트명														*
  *		  int nsems															*
