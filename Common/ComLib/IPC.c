@@ -501,5 +501,3 @@ int SemOpr(char *prjnm, int nsems, int semno, int flag)
 
 	return(rc);
 }
-
-// git Å×½ºÆ®
