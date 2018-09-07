@@ -186,7 +186,7 @@ void LOG_TMP(char *fmt, ...)
 	return;
 }
 
-pid_t RunProgWithLog(const char *pname, const char *args)
+pid_t RunProgWithLog(char *pname, const char *args)
 {
 	char	cmd[MAX_PATH_LEN + MAX_FILE_LEN + 1];
 	char	buff[1024 + 1];
