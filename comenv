@@ -2,7 +2,7 @@
 
 CC		= gcc
 
-G_DEFS		= -D_LINUX -DDEBUG #-D_LIB_DEBUG
+G_DEFS	= -D_LINUX -DDEBUG #-D_LIB_DEBUG
 
 I_X11	= -I/usr/include/X11
 
